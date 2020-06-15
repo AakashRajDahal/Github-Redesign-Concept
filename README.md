@@ -1,4 +1,4 @@
-# miracle-view-resort
+#   github-redesign-concept
 
 ## Project setup
 ```
