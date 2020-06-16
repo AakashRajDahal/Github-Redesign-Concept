@@ -1,8 +1,6 @@
-/* Colors */
-$primaryDark: #333333;
-$primaryBlue: #4078C0;
-$primaryGreen: #6CC644;
-$primaryRed: #BD2C00;
-$primaryYellow: #FBCB3E;
-$primaryBG: #f5f5f5;
-$primaryWhite: #ffffff;
+@import "md/variables";
+
+body {
+    background-color:$primaryBG;
+    ;
+}

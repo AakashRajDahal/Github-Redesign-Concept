@@ -2,7 +2,7 @@
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Hello Bhantu ji "/>
-    how are you 
+    how are you
   </div>
 </template>
 
