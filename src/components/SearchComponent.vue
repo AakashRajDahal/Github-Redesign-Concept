@@ -149,7 +149,7 @@ export default {
 </script>
 
 <style scoped>
-/* .fade-enter-active,
+.fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.2s;
 }
@@ -170,5 +170,5 @@ export default {
 }
 #search-icon{
   color: #cbcbcb;
-} */
+}
 </style>
