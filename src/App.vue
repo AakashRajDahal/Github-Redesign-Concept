@@ -4,6 +4,7 @@
     <ul>
       <li>Home</li>
       <li>Searchbar</li>
+      <li></li>
     </ul>
   </nav>
     <div class="bg-gray-100 min-h-screen pt-40 text-lg">
@@ -11,6 +12,16 @@
     </div>
   </div>
 </template>
+
+<script>
+import SearchComponent from '@/SearchComponent.vue';
+
+export default {
+  components: {
+    SearchComponent,
+  },
+};
+</script>
 
 <style lang="scss">
 // #app {
