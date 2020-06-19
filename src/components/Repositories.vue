@@ -2,7 +2,17 @@
   <div>
     <aside>
       <div class="g-title">Repositories</div>
-      <button>+New</button>
+      <Button />
     </aside>
   </div>
 </template>
+
+<script>
+import Button from './Button.vue';
+
+export default {
+  components: {
+    Button,
+  },
+};
+</script>
