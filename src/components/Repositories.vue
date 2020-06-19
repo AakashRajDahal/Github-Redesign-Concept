@@ -1,6 +1,6 @@
 <template>
   <div class="repo">
-    <aside>
+    <aside class="repo-title">
       <div class="g-title">Repositories</div>
       <Button />
     </aside>
@@ -22,7 +22,7 @@ export default {
 background-color: #fff;
 padding: 1.4rem;
 border-radius: 5px;
-  aside{
+  .repo-title{
     display: flex;
     justify-content: space-between;
   }
