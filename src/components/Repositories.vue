@@ -5,17 +5,20 @@
       <Button />
     </aside>
     <search-component-repo  class="search"/>
+    <repo-lists />
   </div>
 </template>
 
 <script>
 import Button from './Button.vue';
 import SearchComponentRepo from './SearchComponentRepo.vue';
+import RepoLists from './RepoLists.vue';
 
 export default {
   components: {
     Button,
     SearchComponentRepo,
+    RepoLists,
   },
 };
 </script>
@@ -32,8 +35,5 @@ export default {
     display: flex;
     justify-content: space-between;
   }
-  // .search{
-
-  // }
 }
 </style>
