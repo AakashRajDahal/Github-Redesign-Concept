@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <repositories />
+    <feed />
   </div>
 </template>
 
@@ -17,3 +18,7 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" >
+
+</style>
