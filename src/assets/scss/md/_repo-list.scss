@@ -1,23 +1,23 @@
 .repo-lists {
-    border-bottom: 2px solid $primaryGray;
-    border-radius: 5px;
-    overflow-y:scroll;
-    display:grid;
-    grid-gap:1rem;
-    grid-template-columns: 1fr;
-    padding-bottom: 2.5rem;
-    .lists {
-        cursor: pointer;
-      .fas.fa-lock{
-        color: $primaryOrange;
-      }
-       .fas.fa-code{
-        color: $primaryGreen;
-      }
-      .lists-title {
-        color: #4078c0;
-        font-size: 16px;
-        margin-left: 0.8rem;
-      }
+  border-bottom: 2px solid $primaryGray;
+  border-radius: 5px;
+  overflow-y: scroll;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr;
+  padding-bottom: 2.5rem;
+  .lists {
+    cursor: pointer;
+    .fas.fa-lock {
+      color: $primaryOrange;
+    }
+    .fas.fa-code {
+      color: $primaryGreen;
+    }
+    .lists-title {
+      color: #4078c0;
+      font-size: 16px;
+      margin-left: 0.8rem;
     }
   }
+}
