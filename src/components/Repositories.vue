@@ -6,6 +6,7 @@
     </aside>
     <search-component-repo  class="search"/>
     <repo-lists />
+    <repo-team />
   </div>
 </template>
 
@@ -13,12 +14,15 @@
 import Button from './Button.vue';
 import SearchComponentRepo from './SearchComponentRepo.vue';
 import RepoLists from './RepoLists.vue';
+import RepoTeam from './RepoTeam.vue';
+
 
 export default {
   components: {
     Button,
     SearchComponentRepo,
     RepoLists,
+    RepoTeam,
   },
 };
 </script>
