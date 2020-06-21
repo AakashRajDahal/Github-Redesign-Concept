@@ -22,13 +22,15 @@ body {
 }
 
 .repo-lists {
-  border-bottom: 1px solid red;
+  border-bottom: 2px solid #DFDFDF;
+  border-radius: 5px;
   overflow-y: scroll;
   display: -ms-grid;
   display: grid;
   grid-gap: 1rem;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  padding-bottom: 2.5rem;
 }
 
 .repo-lists .lists {
@@ -46,5 +48,6 @@ body {
 .repo-lists .lists .lists-title {
   color: #4078c0;
   font-size: 16px;
+  margin-left: 0.8rem;
 }
 /*# sourceMappingURL=style.css.map */
