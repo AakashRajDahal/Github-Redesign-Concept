@@ -15,13 +15,5 @@
 </script>
 
 <style lang="scss" >
-.repo-team {
-  color: $primaryDark;
-  .repo-title {
-    font-size: 18px;
-  }
-  .repo-para {
-    font-size: 18px;
-  }
-}
+
 </style>

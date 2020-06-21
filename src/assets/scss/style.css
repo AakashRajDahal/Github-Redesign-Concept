@@ -50,4 +50,16 @@ body {
   font-size: 16px;
   margin-left: 0.8rem;
 }
+
+.repo-team {
+  color: #333333;
+}
+
+.repo-team .repo-title {
+  font-size: 18px;
+}
+
+.repo-team .repo-para {
+  font-size: 16px;
+}
 /*# sourceMappingURL=style.css.map */
