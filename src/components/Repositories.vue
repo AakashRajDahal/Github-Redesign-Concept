@@ -15,7 +15,7 @@ import Button from './Button.vue';
 import SearchComponentRepo from './SearchComponentRepo.vue';
 import RepoLists from './RepoLists.vue';
 import RepoTeam from './RepoTeam.vue';
-
+import ButtonCreate from './ButtonCreate.vue';
 
 export default {
   components: {
@@ -23,6 +23,7 @@ export default {
     SearchComponentRepo,
     RepoLists,
     RepoTeam,
+    ButtonCreate,
   },
 };
 </script>
