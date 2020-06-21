@@ -10,8 +10,9 @@
 }
 
 .g-button.create {
+  width: 80%;
   color: #4078C0;
-  background: rbga(64, 120, 192, 0.2);
+  background: RGBA(64, 120, 192, 0.2);
 }
 
 body {
@@ -44,10 +45,12 @@ body {
 
 .repo-lists .lists .fas.fa-lock {
   color: #C9510C;
+  font-size: 14px;
 }
 
 .repo-lists .lists .fas.fa-code {
   color: #6CC644;
+  font-size: 14px;
 }
 
 .repo-lists .lists .lists-title {
