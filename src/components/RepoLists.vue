@@ -51,22 +51,5 @@
 </script>
 
 <style lang="scss" >
-.repo-lists {
-  border-bottom: 1px solid red;
-  overflow-y:scroll;
-  .lists {
-    display:grid;
-    grid-gap:1rem;
-    .fas.fa-lock{
-      color: $primaryOrange;
-    }
-     .fas.fa-code{
-      color: $primaryGreen;
-    }
-    .lists-title {
-      color: #4078c0;
-      font-size: 16px;
-    }
-  }
-}
+
 </style>

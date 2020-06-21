@@ -20,4 +20,31 @@ body {
       grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1rem;
 }
+
+.repo-lists {
+  border-bottom: 1px solid red;
+  overflow-y: scroll;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.repo-lists .lists {
+  cursor: pointer;
+}
+
+.repo-lists .lists .fas.fa-lock {
+  color: #C9510C;
+}
+
+.repo-lists .lists .fas.fa-code {
+  color: #6CC644;
+}
+
+.repo-lists .lists .lists-title {
+  color: #4078c0;
+  font-size: 16px;
+}
 /*# sourceMappingURL=style.css.map */
