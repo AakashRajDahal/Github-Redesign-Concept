@@ -10,7 +10,8 @@
 }
 
 .g-button.create {
-  color: red;
+  color: #4078C0;
+  background: rbga(64, 120, 192, 0.2);
 }
 
 body {

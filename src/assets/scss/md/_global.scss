@@ -9,5 +9,6 @@
   font-size: 16px;
 }
 .g-button.create{
-  color: red;
+  color: $primaryBlue;
+  background: rbga(64,120,192,0.2);
 }
