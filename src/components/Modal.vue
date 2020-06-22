@@ -1,49 +1,47 @@
 <template>
-  <div v-if="isVisibility" class="overlay">
-    <div class="modal">
-      <div class="flex1">
-        <span>Modal Title</span>
-        <button>
-          <i class="fas fa-code"></i>
-          ENter
-        </button>
-      </div>
+  <div
+    class="modal"
+    @click="$emit('close')"
+  >
+    <div
+      class="content"
+      @click.stop
+    >
+      Lorem ipsum dolor sit amet,
+      consectetur adipisicing elit.
+       Quisquam, placeat, unde! Architecto
+        laboriosam ducimus atque cum dolore
+        doloribus obcaecati vero. Minus porro
+         sapiente unde fuga incidunt quidem
+         necessitatibus mollitia libero?
     </div>
-    <div class="p3">
-      <div class="m-4">Modal Body</div>
-      <button>Confirm</button>
-    </div>
-    <button @click.prevent="toggleModal" class="open-modal">Add new</button>
   </div>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      isVisibility: false,
-    };
-  },
-  methods: {
-    toggleModal() {
-      this.isVisibility = !this.isVisibility;
-    },
-  },
-};
 </script>
 
 <style lang="scss" scoped>
-.overlay{
-  position: fixed;
+.modal {
+  position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
-  background:rbga(0,0,0,0.2);
-  .flex1{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6)
+}.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% - 20px);
+  max-width: 500px;
+  transform: translate(-50%, -50%);
+  background: #FFF;
+  border-radius: 3px;
+  padding: 20px;
+  line-height: 1.5;
+  font-size: 18px;
+  color: #444;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 </style>

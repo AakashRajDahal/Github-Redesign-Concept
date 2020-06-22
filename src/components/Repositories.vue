@@ -1,10 +1,10 @@
 <template>
-  <div class="repo">
-    <aside class="repo-title">
-      <div class="g-title">Repositories</div>
+  <div class='repo'>
+    <aside class='repo-title'>
+      <div class='g-title'>Repositories</div>
       <Button />
     </aside>
-    <search-component-repo  class="search"/>
+    <search-component-repo class='search' />
     <repo-lists />
     <repo-team />
     <button-create />
@@ -29,7 +29,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang='scss' scoped>
 .repo {
   background-color: #fff;
   padding: 1.4rem;
