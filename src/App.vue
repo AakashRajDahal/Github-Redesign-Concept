@@ -8,8 +8,10 @@
           <SearchComponent />
         </li>
         <div>
-          <modal v-if="showModal" @close="showModal = false" />
-          <button class="button" @click="showModal = true">Show Modal</button>
+          <modal v-if="showModal"
+          @close="showModal = false" />
+          <button class="button1" id="button1"
+           @click="showModal = true">Show Modal</button>
         </div>
       </ul>
     </nav>
