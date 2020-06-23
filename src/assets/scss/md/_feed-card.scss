@@ -6,8 +6,9 @@
     justify-content: space-between;
     .card-img {
       display: flex;
+      align-items: center;
       .card-img-title {
-        padding-left: 0.5;
+        padding-left: 0.8rem;
         color: $primaryDark;
         font-size: 16px;
         span {
