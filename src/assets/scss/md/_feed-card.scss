@@ -4,6 +4,8 @@
   .card-title {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $primaryGray;
     .card-img {
       display: flex;
       align-items: center;
@@ -14,6 +16,19 @@
         span {
           color: $secondaryGray;
         }
+      }
+    }
+  }
+  .card-status {
+    .status-title {
+      display: flex;
+      flex-direction: column;
+      font-size: 18px;
+      .title-1 {
+        color: $primaryDark;
+      }
+      .title-2 {
+        color: $secondaryGray;
       }
     }
   }
