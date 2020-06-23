@@ -24,6 +24,15 @@
       </div>
       <ButtonStar />
     </aside>
+    <aside class="card-icons">
+      <div class="icon-status">
+        <span><i class="fas fa-circle"></i> TypeScript</span>
+        <span><i class="fas fa-star"></i> 2.1k</span>
+      </div>
+      <div class="status">
+        New Repository
+      </div>
+    </aside>
   </div>
 </template>
 

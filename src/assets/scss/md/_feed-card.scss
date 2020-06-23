@@ -35,4 +35,13 @@
       }
     }
   }
+  .card-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .icon-status{
+      font-size: 13px;
+      color: $primartText;
+    }
+  }
 }
