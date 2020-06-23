@@ -22,15 +22,15 @@
           Get up and running quickly to develop or extend Open edX services
         </span>
       </div>
-      <Button />
+      <ButtonStar />
     </aside>
   </div>
 </template>
 
 <script>
-import Button from './Button.vue';
+import ButtonStar from './ButtonStar.vue';
 
 export default {
-  Button,
+  ButtonStar,
 };
 </script>

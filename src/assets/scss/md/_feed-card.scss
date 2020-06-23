@@ -20,6 +20,9 @@
     }
   }
   .card-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     .status-title {
       display: flex;
       flex-direction: column;
