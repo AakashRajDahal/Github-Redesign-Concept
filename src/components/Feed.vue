@@ -1,6 +1,6 @@
 <template>
     <div class="feed">
-        Your <strong>Feed </strong>
+      <span class="feed-title"> Your <strong>Feed </strong></span>
         <feed-card />
     </div>
 </template>
