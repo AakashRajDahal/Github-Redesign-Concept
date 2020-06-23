@@ -35,20 +35,25 @@
       }
     }
   }
-  .card-icons{
+  .card-icons {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .icon-status{
+    .icon-status {
       font-size: 13px;
       color: $primartText;
-      .fas{
+      .fas {
         font-size: 10px;
         color: $primaryOrange;
       }
-      .fas.fa-star{
-        color:$primaryYellow;
+      .fas.fa-star {
+        color: $primaryYellow;
+        padding-left: 2.2rem;
       }
+    }
+    .status {
+      font-size: 16px;
+      color: $primaryDark;
     }
   }
 }
