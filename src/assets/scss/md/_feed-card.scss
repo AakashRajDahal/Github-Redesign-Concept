@@ -1,7 +1,19 @@
-.card{
-    background-color: #fff;
-    padding: 1.4rem;
-    .card-title{
-        display: flex;
+.card {
+  background-color: #fff;
+  padding: 1.4rem;
+  .card-title {
+    display: flex;
+    justify-content: space-between;
+    .card-img {
+      display: flex;
+      .card-img-title {
+        padding-left: 0.5;
+        color: $primaryDark;
+        font-size: 16px;
+        span {
+          color: $secondaryGray;
+        }
+      }
     }
+  }
 }

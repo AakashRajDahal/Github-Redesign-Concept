@@ -3,7 +3,17 @@
     <aside class="card-title">
       <div class="card-img">
         <img src="@/assets/Image 4.png" alt />
-        <span>bprayush forked bprayush/devstack from edx/devstack</span>
+        <div class="card-img-title">
+          bprayush
+        <span>
+          forked
+          </span>
+         bprayush/devstack
+          <span>
+      from
+          </span>
+          edx/devstack
+        </div>
       </div>
       <div class="card-time">
         5 hours ago
