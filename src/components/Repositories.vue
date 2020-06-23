@@ -30,16 +30,5 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-.repo {
-  background-color: #fff;
-  padding: 1.4rem;
-  border-radius: 5px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1.5rem;
-  .repo-title {
-    display: flex;
-    justify-content: space-between;
-  }
-}
+
 </style>
