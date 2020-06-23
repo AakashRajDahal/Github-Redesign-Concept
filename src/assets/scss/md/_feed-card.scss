@@ -1,4 +1,7 @@
 .card{
     background-color: #fff;
     padding: 1.4rem;
+    .card-title{
+        display: flex;
+    }
 }
