@@ -42,6 +42,13 @@
     .icon-status{
       font-size: 13px;
       color: $primartText;
+      .fas{
+        font-size: 10px;
+        color: $primaryOrange;
+      }
+      .fas.fa-star{
+        color:$primaryYellow;
+      }
     }
   }
 }
