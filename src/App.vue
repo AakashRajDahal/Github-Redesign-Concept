@@ -7,12 +7,6 @@
         <li>
           <SearchComponent />
         </li>
-        <div>
-          <modal v-if="showModal"
-          @close="showModal = false" />
-          <button class="button1" id="button1"
-           @click="showModal = true">Show Modal</button>
-        </div>
       </ul>
     </nav>
     <div class="bg-gray-100 min-h-screen pt-40 text-lg">
@@ -23,12 +17,10 @@
 
 <script>
 import SearchComponent from '@/components/SearchComponent.vue';
-import Modal from '@/components/Modal.vue';
 
 export default {
   components: {
     SearchComponent,
-    Modal,
   },
   data() {
     return {
