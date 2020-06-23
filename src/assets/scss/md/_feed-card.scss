@@ -1,6 +1,8 @@
 .card {
   background-color: #fff;
   padding: 1.4rem;
+  display: grid;
+  grid-gap: 1rem;
   .card-title {
     display: flex;
     justify-content: space-between;
