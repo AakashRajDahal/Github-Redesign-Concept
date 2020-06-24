@@ -1,9 +1,13 @@
 @import "md/variables";
 @import "md/global";
 
+body,
+html {
+  scroll-behavior: smooth;
+}
 body {
-    background-color:$primaryBG;
-    ;
+  background-color: $primaryBG;
+  font-family: "Cera Pro", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @import "md/home";
@@ -12,6 +16,3 @@ body {
 @import "md/repo-list";
 @import "md/repo-team";
 @import "md/feed-card";
-
-
-
