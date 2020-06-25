@@ -11,7 +11,7 @@
       </div>
       <div class="card-time">yesterday</div>
     </aside>
-    <aside class="card-title">
+    <aside class="card-title follow">
       <div class="card-img">
         <img src="@/assets/Image 9.png" alt />
         <div class="card-info">
@@ -27,7 +27,7 @@
         </div>
         </div>
       </div>
-      <div class="card-time">yesterday</div>
+      <button><i class="fas fa-user-plus"></i> Follow</button>
     </aside>
   </div>
 </template>

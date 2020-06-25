@@ -21,6 +21,12 @@
       }
     }
   }
+  .card-title.follow{
+    border-bottom: none;
+    button{
+        background: RGBA(64, 120, 192, 0.2);
+    }
+  }
   .card-title.commit {
     flex-direction: column;
     line-height: 30px;
@@ -44,6 +50,7 @@
       }
     }
   }
+
   .card-status {
     display: flex;
     justify-content: space-between;
@@ -74,6 +81,7 @@
       flex-direction: row;
     }
   }
+
   .card-icons {
     display: flex;
     align-items: center;
