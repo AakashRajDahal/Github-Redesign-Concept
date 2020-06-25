@@ -32,6 +32,7 @@
           <span class="commit">slickJS CDN addition and implementation</span>
         </div>
       </div>
+      <a href="http://">2 more commits <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
     </aside>
   </div>
 </template>

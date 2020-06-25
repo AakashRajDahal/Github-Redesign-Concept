@@ -24,6 +24,7 @@
   .card-title.commit {
     flex-direction: column;
     line-height: 30px;
+    border-bottom: none;
     .card-img {
       .card-img-title {
         color: $primaryBlue;
