@@ -1,8 +1,10 @@
 <template>
     <div class="feed">
       <h2 class="feed-title"> Your <strong>Feed </strong></h2>
+      <aside class="feed-sections">
         <feed-card1 />
         <feed-card2 />
+      </aside>
     </div>
 </template>
 
