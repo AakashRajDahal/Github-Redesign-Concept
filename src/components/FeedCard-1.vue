@@ -18,7 +18,7 @@
         <span class="title-1">edx/devstack</span>
         <span class="title-2">Get up and running to develop or extend Open edX services</span>
       </div>
-      <ButtonStar />
+    <button><i class="fas fa-star"></i> Star</button>
     </aside>
     <aside class="card-icons">
       <div class="icon-status">
@@ -35,9 +35,4 @@
 </template>
 
 <script>
-import ButtonStar from './ButtonStar.vue';
-
-export default {
-  ButtonStar,
-};
 </script>
