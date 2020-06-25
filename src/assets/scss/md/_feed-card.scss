@@ -21,6 +21,9 @@
       }
     }
   }
+  .card-title.commit{
+    flex-direction: column;
+  }
   .card-status {
     display: flex;
     justify-content: space-between;
@@ -41,8 +44,9 @@
         cursor: pointer;
         background: RGBA(64,120,192,0.2);
         border: none;
-        color: #4078C0;
+        color: $primaryBlue;
         font-size: 13px;
+        margin-left: 0.5rem;
       }
     }
     .status-title.button1{

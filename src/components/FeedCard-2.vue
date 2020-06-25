@@ -4,7 +4,7 @@
       <div class="card-img">
         <img src="@/assets/Image 6.png" alt />
         <div class="card-img-title">
-         kusumghimire
+          kusumghimire
           <span>pushed to</span>
           AakashRajDahal/CloudAnimationWebsite
         </div>
@@ -14,19 +14,24 @@
     <aside class="card-status">
       <div class="status-title button1">
         <span class="title-2">4 commits to</span>
-      <button>master</button>
+        <button>master</button>
       </div>
     </aside>
-    <aside class="card-icons">
-      <div class="icon-status">
-        <span>
-          <i class="fas fa-circle"></i> TypeScript
-        </span>
-        <span>
-          <i class="fas fa-star"></i> 2.1k
-        </span>
+    <aside class="card-title commit">
+      <div class="card-img">
+        <img src="@/assets/Image 7.png" alt />
+        <div class="card-img-title">
+          6840gh8
+          <span class="commit">hover effect added to buttons</span>
+        </div>
       </div>
-      <div class="status">New Repository</div>
+      <div class="card-img">
+        <img src="@/assets/Image 7.png" alt />
+        <div class="card-img-title">
+          abfe123
+          <span class="commit">slickJS CDN addition and implementation</span>
+        </div>
+      </div>
     </aside>
   </div>
 </template>
