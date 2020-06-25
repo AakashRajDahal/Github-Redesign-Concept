@@ -25,6 +25,13 @@
     border-bottom: none;
     button{
         background: RGBA(64, 120, 192, 0.2);
+        color: $primaryBlue;
+        padding: 8px 16px;
+        height: 35px;
+        font-size: 15px;
+        .fas{
+          font-size: 12px;
+        }
     }
   }
   .card-title.commit {
