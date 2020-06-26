@@ -4,7 +4,15 @@
   .card-status {
     .status-title {
       .title-1.explore {
-        color: $primaryBlue;
+        color: $secondaryBlue;
+      }
+    }
+  }
+
+  .card-icons {
+    .icon-status {
+      .fas.fa-circle.explore {
+        color: $secondaryRed;
       }
     }
   }
