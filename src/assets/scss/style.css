@@ -22,9 +22,35 @@ body {
 .home {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
   grid-gap: 1rem;
+}
+
+.repo {
+  background-color: #fff;
+  padding: 1.4rem;
+  border-radius: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 1.5rem;
+}
+
+.repo .repo-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feed .feed-title {
+  font-size: 24px;
+  color: #333333;
+  font-weight: 400;
 }
 
 .repo-lists {
@@ -69,5 +95,106 @@ body {
 
 .repo-team .repo-para {
   font-size: 16px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1.4rem;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.card .card-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #DFDFDF;
+}
+
+.card .card-title .card-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .card-title .card-img .card-img-title {
+  padding-left: 0.8rem;
+  color: #333333;
+  font-size: 16px;
+}
+
+.card .card-title .card-img .card-img-title span {
+  color: #727272;
+}
+
+.card .card-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .card-status .status-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 18px;
+}
+
+.card .card-status .status-title .title-1 {
+  color: #333333;
+}
+
+.card .card-status .status-title .title-2 {
+  color: #727272;
+}
+
+.card .card-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card .card-icons .icon-status {
+  font-size: 13px;
+  color: #AAAAAA;
+}
+
+.card .card-icons .icon-status .fas {
+  font-size: 10px;
+  color: #C9510C;
+}
+
+.card .card-icons .icon-status .fas.fa-star {
+  color: #FBCB3E;
+  padding-left: 2.2rem;
+}
+
+.card .card-icons .status {
+  font-size: 16px;
+  color: #333333;
 }
 /*# sourceMappingURL=style.css.map */
