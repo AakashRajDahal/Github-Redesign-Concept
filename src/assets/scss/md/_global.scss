@@ -1,15 +1,19 @@
 //buttons
 .g-button,
 button {
-  // padding: 12px 36px;
+  padding: 12px 36px;
   border-radius: 5px;
   cursor: pointer;
   background-color: $primaryGreen;
   border: none;
   color: #fff;
   font-size: 16px;
+}
+.g-button{
+  padding: 0;
   width: 100px;
   height: 40px;
+
 }
 .g-button.create{
   width: 80%;
