@@ -1,6 +1,8 @@
 .explore {
   .explore-more {
     padding: 1rem 0;
+    display: flex;
+    justify-content: flex-end;
     a {
       text-align: end;
       list-style: none;
@@ -9,7 +11,7 @@
       font-weight: 500;
       color: $secondaryBlue;
       .fas {
-        font-size: 14px;
+        font-size: 13px;
       }
     }
   }
