@@ -1,6 +1,8 @@
 <template>
   <div class="explore">
-    <!-- <img src='@assets/Image-1.png' alt='person working ' /> -->
+    <!-- <div>
+    <img src='@assets/Image-1.png' alt='person working ' />
+    </div> -->
     <h2>Explore Repositories</h2>
     <explore-card-1 />
     <explore-card-2 />
