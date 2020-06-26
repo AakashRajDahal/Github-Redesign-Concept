@@ -1,3 +1,11 @@
 .card.explore {
   background-color: transparent;
+  border-bottom: 1px solid $primaryGray;
+  .card-status {
+    .status-title {
+      .title-1.explore {
+        color: $primaryBlue;
+      }
+    }
+  }
 }
