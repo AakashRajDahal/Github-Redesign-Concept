@@ -2,12 +2,14 @@
   border-bottom: 2px solid $primaryGray;
   border-radius: 5px;
   overflow-y: scroll;
+  overflow-x: hidden;
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr;
   padding-bottom: 2.5rem;
   .lists {
     cursor: pointer;
+    font-weight: 500;
     .fas.fa-lock {
       color: $primaryOrange;
       font-size: 14px;

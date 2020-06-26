@@ -1,0 +1,18 @@
+.explore {
+  .explore-more {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: flex-end;
+    a {
+      text-align: end;
+      list-style: none;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      color: $secondaryBlue;
+      .fas {
+        font-size: 13px;
+      }
+    }
+  }
+}

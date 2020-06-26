@@ -1,0 +1,23 @@
+.card.explore {
+  background-color: transparent;
+  border-bottom: 1px solid $primaryGray;
+  .card-status {
+    .status-title {
+      .title-1.explore {
+        color: $secondaryBlue;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .card-icons {
+    .icon-status {
+      .fas.fa-circle.explore {
+        color: $secondaryRed;
+      }
+      .fas.fa-circle.explore1 {
+        color:$primaryGreen;
+      }
+    }
+  }
+}
