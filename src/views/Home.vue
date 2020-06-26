@@ -12,8 +12,6 @@ import Repositories from '@/components/Repositories.vue';
 import Feed from '@/components/Feed.vue';
 import Explore from '@/components/Explore.vue';
 
-
-
 export default {
   name: 'Home',
   components: {
