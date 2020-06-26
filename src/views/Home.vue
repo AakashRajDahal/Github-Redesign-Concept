@@ -2,6 +2,7 @@
   <div class="home">
     <repositories />
     <feed />
+    <explore />
   </div>
 </template>
 
@@ -9,6 +10,8 @@
 // @ is an alias to /src
 import Repositories from '@/components/Repositories.vue';
 import Feed from '@/components/Feed.vue';
+import Explore from '@/components/Explore.vue';
+
 
 
 export default {
@@ -16,6 +19,7 @@ export default {
   components: {
     Repositories,
     Feed,
+    Explore,
   },
 };
 </script>
