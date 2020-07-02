@@ -1,16 +1,13 @@
 <template>
   <div>
-       <div class="block1 ">
-          <button @click="toggleMenu" class="flex1">
-            Button
-          </button>
-        </div>
     <nav>
-      <ul
-      class="uppercase1"
-          :class='menuOpen'>
-        <li>Home</li>
-        <li>Searchbar</li>
+      <ul>
+        <li><i class="fab fa-github"></i></li>
+        <li>Pull Requests</li>
+        <li>Issues</li>
+        <li>Explore</li>
+      </ul>
+      <ul>
         <li>
           <SearchComponent />
         </li>
@@ -41,10 +38,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.block1{
-  display :hidden;
+.fab.fa-github{
+  font-size: 48px;
 }
-.uppercase1{
-  display: hidden;
+nav {
+  ul {
+    display: flex;
+    list-style: none;
+  }
 }
 </style>
