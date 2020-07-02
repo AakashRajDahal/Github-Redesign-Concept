@@ -12,6 +12,16 @@
           <SearchComponent />
         </li>
       </ul>
+        <ul>
+        <li>
+        <i class="fas fa-store"></i>
+        </li>
+        <li><i class="fas fa-bell"></i></li>
+        <li>
+          <img src="@/assets/Image 3.png" alt="person working " />
+
+        </li>
+      </ul>
     </nav>
   </div>
 </template>
