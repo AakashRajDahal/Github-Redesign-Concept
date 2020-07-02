@@ -1,5 +1,6 @@
 nav {
-  border-bottom: 1px solid #cbcbcb;
+  border-bottom: 1px solid $DarkGray;
+  border-radius: 3px;
   display: flex;
   justify-content: space-between;
   .nav1,
@@ -13,9 +14,30 @@ nav {
       padding-right: 1.5rem;
       color: $primaryDark;
       font-weight: 500;
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      line-height: 30px;
       .fab.fa-github {
         font-size: 48px;
       }
+      .fas.fa-circle {
+        font-size: 6px;
+        color: transparent;
+      }
+    }
+    .list1 {
+      .fas.fa-circle {
+        color: $secondaryRed;
+      }
+    }
+  }
+  .nav3 {
+    .fas.fa-store,
+    .fas.fa-bell {
+      font-size: 20px;
+      line-height: 30px;
     }
   }
 }

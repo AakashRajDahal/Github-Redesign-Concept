@@ -5,9 +5,18 @@
         <li>
           <i class="fab fa-github"></i>
         </li>
-        <li>Pull Requests</li>
-        <li>Issues</li>
-        <li>Explore</li>
+        <li class="list1">
+          Pull Requests
+          <i class="fas fa-circle"></i>
+        </li>
+        <li class="list2">
+          Issues
+          <i class="fas fa-circle"></i>
+        </li>
+        <li class="list3">
+          Explore
+          <i class="fas fa-circle"></i>
+        </li>
       </ul>
       <ul class="nav2">
         <li>
@@ -17,9 +26,12 @@
       <ul class="nav3">
         <li>
           <i class="fas fa-store"></i>
+          <i class="fas fa-circle"></i>
+
         </li>
-        <li>
+        <li class="list1">
           <i class="fas fa-bell"></i>
+          <i class="fas fa-circle"></i>
         </li>
         <li>
           <img src="@/assets/Image 3.png" alt="person working " />
@@ -51,5 +63,4 @@ export default {
 </script>
 
 <style lang="scss" >
-
 </style>
