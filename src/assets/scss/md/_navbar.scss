@@ -1,0 +1,21 @@
+nav {
+  border-bottom: 1px solid #cbcbcb;
+  display: flex;
+  justify-content: space-between;
+  .nav1,
+  .nav2,
+  .nav3 {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      padding-right: 1.5rem;
+      color: $primaryDark;
+      font-weight: 500;
+      .fab.fa-github {
+        font-size: 48px;
+      }
+    }
+  }
+}

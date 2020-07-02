@@ -1,25 +1,28 @@
 <template>
   <div>
     <nav>
-      <ul>
-        <li><i class="fab fa-github"></i></li>
+      <ul class="nav1">
+        <li>
+          <i class="fab fa-github"></i>
+        </li>
         <li>Pull Requests</li>
         <li>Issues</li>
         <li>Explore</li>
       </ul>
-      <ul>
+      <ul class="nav2">
         <li>
           <SearchComponent />
         </li>
       </ul>
-        <ul>
+      <ul class="nav3">
         <li>
-        <i class="fas fa-store"></i>
+          <i class="fas fa-store"></i>
         </li>
-        <li><i class="fas fa-bell"></i></li>
+        <li>
+          <i class="fas fa-bell"></i>
+        </li>
         <li>
           <img src="@/assets/Image 3.png" alt="person working " />
-
         </li>
       </ul>
     </nav>
@@ -47,14 +50,6 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.fab.fa-github{
-  font-size: 48px;
-}
-nav {
-  ul {
-    display: flex;
-    list-style: none;
-  }
-}
+<style lang="scss" >
+
 </style>
