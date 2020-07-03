@@ -3,19 +3,27 @@
     <nav>
       <ul class="nav1">
         <li>
-          <i class="fab fa-github"></i>
+          <a href>
+            <i class="fab fa-github"></i>
+          </a>
         </li>
         <li class="list1">
-          Pull Requests
-          <i class="fas fa-circle"></i>
+          <a href>
+            Pull Requests
+            <i class="fas fa-circle"></i>
+          </a>
         </li>
         <li class="list2">
-          Issues
-          <i class="fas fa-circle"></i>
+          <a href>
+            Issues
+            <i class="fas fa-circle"></i>
+          </a>
         </li>
         <li class="list3">
-          Explore
-          <i class="fas fa-circle"></i>
+          <a href>
+            Explore
+            <i class="fas fa-circle"></i>
+          </a>
         </li>
       </ul>
       <ul class="nav2">
@@ -25,16 +33,21 @@
       </ul>
       <ul class="nav3">
         <li>
-          <i class="fas fa-store"></i>
-          <i class="fas fa-circle"></i>
-
+          <a href>
+            <i class="fas fa-store"></i>
+            <i class="fas fa-circle"></i>
+          </a>
         </li>
         <li class="list1">
-          <i class="fas fa-bell"></i>
-          <i class="fas fa-circle"></i>
+          <a href>
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-circle"></i>
+          </a>
         </li>
         <li>
-          <img src="@/assets/Image 3.png" alt="person working " />
+          <a href>
+            <img src="@/assets/Image 3.png" alt="person working " />
+          </a>
         </li>
       </ul>
     </nav>

@@ -11,20 +11,23 @@ nav {
     justify-content: center;
     align-items: center;
     li {
-      padding-right: 1.5rem;
-      color: $primaryDark;
-      font-weight: 500;
-      display: flex;
-      // justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      line-height: 30px;
-      .fab.fa-github {
-        font-size: 48px;
-      }
-      .fas.fa-circle {
-        font-size: 6px;
-        color: transparent;
+      a{
+        padding-right: 1.5rem;
+        color: $primaryDark;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        line-height: 30px;
+        text-decoration: none;
+        .fab.fa-github {
+          font-size: 48px;
+        }
+        .fas.fa-circle {
+          font-size: 6px;
+          color: transparent;
+        }
+
       }
     }
     .list1 {
