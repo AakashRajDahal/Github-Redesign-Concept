@@ -1,5 +1,27 @@
 /* Colors */
-.g-button {
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #AAAAAA;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #727272;
+}
+
+.g-button,
+button {
   padding: 12px 36px;
   border-radius: 5px;
   cursor: pointer;
@@ -9,14 +31,26 @@
   font-size: 16px;
 }
 
+.g-button {
+  padding: 0;
+  width: 100px;
+  height: 40px;
+}
+
 .g-button.create {
   width: 80%;
   color: #4078C0;
   background: RGBA(64, 120, 192, 0.2);
 }
 
+body,
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f5f5f5;
+  font-family: "Cera Pro", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .home {
@@ -25,6 +59,8 @@ body {
   -ms-grid-columns: 1fr 2fr 1fr;
       grid-template-columns: 1fr 2fr 1fr;
   grid-gap: 1rem;
+  margin-top: 3rem;
+  max-width: 1360px;
 }
 
 .repo {
@@ -53,48 +89,10 @@ body {
   font-weight: 400;
 }
 
-.repo-lists {
-  border-bottom: 2px solid #DFDFDF;
-  border-radius: 5px;
-  overflow-y: scroll;
+.feed .feed-sections {
   display: -ms-grid;
   display: grid;
-  grid-gap: 1rem;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  padding-bottom: 2.5rem;
-}
-
-.repo-lists .lists {
-  cursor: pointer;
-}
-
-.repo-lists .lists .fas.fa-lock {
-  color: #C9510C;
-  font-size: 14px;
-}
-
-.repo-lists .lists .fas.fa-code {
-  color: #6CC644;
-  font-size: 14px;
-}
-
-.repo-lists .lists .lists-title {
-  color: #4078c0;
-  font-size: 16px;
-  margin-left: 0.8rem;
-}
-
-.repo-team {
-  color: #333333;
-}
-
-.repo-team .repo-title {
-  font-size: 18px;
-}
-
-.repo-team .repo-para {
-  font-size: 16px;
+  grid-gap: 3rem;
 }
 
 .card {
@@ -128,11 +126,58 @@ body {
 .card .card-title .card-img .card-img-title {
   padding-left: 0.8rem;
   color: #333333;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .card .card-title .card-img .card-img-title span {
   color: #727272;
+  font-weight: 400;
+}
+
+.card .card-title.commit {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 30px;
+  border-bottom: none;
+}
+
+.card .card-title.commit .card-img .card-img-title {
+  color: #4078C0;
+}
+
+.card .card-title.commit .card-img .card-img-title .commit {
+  margin-left: 0.5rem;
+  color: #727272;
+}
+
+.card .card-title.commit a {
+  color: #333333;
+  font-size: 12px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.card .card-title.commit a .fas {
+  font-size: 10px;
+}
+
+.card .card-title.follow {
+  border-bottom: none;
+}
+
+.card .card-title.follow button {
+  background: RGBA(64, 120, 192, 0.2);
+  color: #4078C0;
+  padding: 8px 16px;
+  height: 35px;
+  font-size: 15px;
+}
+
+.card .card-title.follow button .fas {
+  font-size: 12px;
 }
 
 .card .card-status {
@@ -155,15 +200,48 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .card .card-status .status-title .title-1 {
   color: #333333;
+  font-weight: 500;
 }
 
 .card .card-status .status-title .title-2 {
   color: #727272;
+}
+
+.card .card-status .status-title button {
+  padding: 4px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: RGBA(64, 120, 192, 0.2);
+  border: none;
+  color: #4078C0;
+  font-size: 13px;
+  margin-left: 0.5rem;
+}
+
+.card .card-status .status-title.button1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.card .card-status button {
+  padding: 8px 16px;
+  background-color: RGBA(251, 203, 62, 0.2);
+  color: #FBCB3E;
+  font-size: 15px;
+}
+
+.card .card-status button .fas {
+  font-size: 12px;
 }
 
 .card .card-icons {
@@ -196,5 +274,192 @@ body {
 .card .card-icons .status {
   font-size: 16px;
   color: #333333;
+}
+
+.repo-lists {
+  border-bottom: 2px solid #DFDFDF;
+  border-radius: 5px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding-bottom: 2.5rem;
+}
+
+.repo-lists .lists {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.repo-lists .lists .fas.fa-lock {
+  color: #C9510C;
+  font-size: 14px;
+}
+
+.repo-lists .lists .fas.fa-code {
+  color: #6CC644;
+  font-size: 14px;
+}
+
+.repo-lists .lists .lists-title {
+  color: #4078c0;
+  font-size: 16px;
+  margin-left: 0.8rem;
+}
+
+.repo-team {
+  color: #333333;
+}
+
+.repo-team .repo-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.repo-team .repo-para {
+  font-size: 16px;
+}
+
+.card.explore {
+  background-color: transparent;
+  border-bottom: 1px solid #DFDFDF;
+}
+
+.card.explore .card-status .status-title .title-1.explore {
+  color: #0070FF;
+  font-weight: 500;
+}
+
+.card.explore .card-icons .icon-status .fas.fa-circle.explore {
+  color: #F96969;
+}
+
+.card.explore .card-icons .icon-status .fas.fa-circle.explore1 {
+  color: #6CC644;
+}
+
+.explore .explore-more {
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.explore .explore-more a {
+  text-align: end;
+  list-style: none;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0070FF;
+}
+
+.explore .explore-more a .fas {
+  font-size: 13px;
+}
+
+nav {
+  border-bottom: 1px solid #DCDCDC;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .nav1,
+nav .nav2,
+nav .nav3 {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .nav1 li a,
+nav .nav2 li a,
+nav .nav3 li a {
+  padding-right: 1.5rem;
+  color: #333333;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+nav .nav1 li a .fab.fa-github,
+nav .nav2 li a .fab.fa-github,
+nav .nav3 li a .fab.fa-github {
+  font-size: 48px;
+}
+
+nav .nav1 li a .fas.fa-circle,
+nav .nav2 li a .fas.fa-circle,
+nav .nav3 li a .fas.fa-circle {
+  font-size: 6px;
+  color: transparent;
+}
+
+nav .nav1 .list1 .fas.fa-circle,
+nav .nav2 .list1 .fas.fa-circle,
+nav .nav3 .list1 .fas.fa-circle {
+  color: #F96969;
+}
+
+nav .nav3 .fas.fa-store,
+nav .nav3 .fas.fa-bell {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .repo {
+    display: none;
+  }
+  .explore {
+    display: none;
+  }
+  nav {
+    border-bottom: 1px solid #DCDCDC;
+    border-radius: 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav .nav1,
+  nav .nav2 {
+    display: none;
+  }
+  nav .nav3 .fas.fa-store,
+  nav .nav3 .fas.fa-bell {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
