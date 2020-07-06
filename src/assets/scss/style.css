@@ -124,7 +124,7 @@ body {
 }
 
 .card .card-title .card-img .card-img-title {
-  padding-left: 0.8rem;
+  padding: 0 0.8rem;
   color: #333333;
   font-size: 15px;
   font-weight: 500;
@@ -460,6 +460,10 @@ nav .nav3 .fas.fa-bell {
   nav .nav3 .fas.fa-bell {
     font-size: 20px;
     line-height: 30px;
+  }
+  .home {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 /*# sourceMappingURL=style.css.map */
