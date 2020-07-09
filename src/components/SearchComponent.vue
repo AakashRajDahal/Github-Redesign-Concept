@@ -163,7 +163,7 @@ export default {
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
-  min-width: 300px;
+  min-width: 350px;
   padding: 5px 15px;
   border-radius: 5px;
 }
