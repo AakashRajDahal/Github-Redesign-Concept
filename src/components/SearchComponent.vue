@@ -1,66 +1,67 @@
 <template>
-  <div class="relative">
-    <search-focus @keyup="focusSearch" />
-    <div class="relative w-80">
-      <i class="material-icons" id="search-icon">search</i>
+  <div class='relative'>
+    <search-focus @keyup='focusSearch' />
+    <div class='relative w-80'>
       <input
-        type="text"
-        placeholder="Search" id="search"
-        v-model="query"
-        @blur="searchResultsVisible = false"
-        @focus="searchResultsVisible = true"
-        @keydown.esc="searchResultsVisible = false"
-        @input="softReset"
-        ref="search"
-        @keyup="performSearch"
-        @keydown.up.prevent="highlightPrevious"
-        @keydown.down.prevent="highlightNext"
-        @keydown.enter="gotoLink"
+        type='text'
+        placeholder='Search or jump to '
+        id='search'
+        v-model='query'
+        @blur='searchResultsVisible = false'
+        @focus='searchResultsVisible = true'
+        @keydown.esc='searchResultsVisible = false'
+        @input='softReset'
+        ref='search'
+        @keyup='performSearch'
+        @keydown.up.prevent='highlightPrevious'
+        @keydown.down.prevent='highlightNext'
+        @keydown.enter='gotoLink'
       />
-      <div class="absolute top-0 ml-3" style="top:10px">
+      <i class='fas fa-search'></i>
+      <!-- <div class='absolute top-0 ml-3' style='top:10px'>
         <svg
-          fill="currentColor"
-          class="text-gray-500 h-5 w-5"
-          viewBox="0 0 24 24"
-          width="24"
-          height="24"
+          fill='currentColor'
+          class='text-gray-500 h-5 w-5'
+          viewBox='0 0 24 24'
+          width='24'
+          height='24'
         />
-      </div>
+      </div> -->
       <div
-        v-if="query.length > 0"
-        class="absolute top-0 right-0 text-2xl mr-3 cursor-pointer
-       text-gray-600 hover:text-gray-800"
-        style="top:2px;"
-        @click="reset"
+        v-if='query.length > 0'
+        class='absolute top-0 right-0 text-2xl mr-3
+         cursor-pointer text-gray-600 hover:text-gray-800'
+        style='top:2px;'
+        @click='reset'
       >&times;</div>
     </div>
-    <transition name="fade">
+    <transition name='fade'>
       <div
-        v-if="query.length > 0 && searchResultsVisible"
-        class="absolute normal-case bg-white border left-0
-        right-0 w-108 text-left mb-4 mt-2 rounded-lg shadow overflow-hidden z-10 overflow-y-auto"
-        style="max-height: 32rem"
+        v-if='query.length > 0 && searchResultsVisible'
+        class='absolute normal-case
+         bg-white border left-0 right-0 w-108
+          text-left mb-4 mt-2 rounded-lg shadow overflow-hidden z-10 overflow-y-auto'
+        style='max-height: 32rem'
       >
-        <div class="flex flex-col" ref="results">
+        <div class='flex flex-col' ref='results'>
           <a
-            v-for="(post, index) in searchResults"
-            :key="index"
-            :href="post.item.path"
-            @mousedown.prevent="searchResultsVisible = true"
-            class="border-b border-gray-400 text-xl cursor-pointer p-4 hover:bg-blue-100"
-            :class="{ 'bg-blue-100': index === highlightedIndex }"
+            v-for='(post, index) in searchResults'
+            :key='index'
+            :href='post.item.path'
+            @mousedown.prevent='searchResultsVisible = true'
+            class='border-b border-gray-400 text-xl cursor-pointer p-4 hover:bg-blue-100'
           >
             {{ post.item.title }}
             <span
-              class="block font-normal text-sm my-1"
+              class='block font-normal text-sm my-1'
             >{{ post.item.summary }}</span>
           </a>
 
           <div
-            v-if="searchResults.length === 0"
-            class="font-normal w-full border-b cursor-pointer p-4"
+            v-if='searchResults.length === 0'
+            class='font-normal w-full border-b cursor-pointer p-4'
           >
-            <p class="my-0">
+            <p class='my-0'>
               No results for '
               <strong>{{ query }}</strong>'
             </p>
@@ -157,18 +158,22 @@ export default {
 .fade-leave-to {
   opacity: 0;
 }
-.relative.w-80{
+.relative.w-80 {
   display: flex;
   align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid #cbcbcb;
+  justify-content: space-between;
+  background-color: #fff;
+  min-width: 300px;
+  padding: 5px 15px;
+  border-radius: 5px;
 }
 #search {
   border: none;
   width: auto;
   padding: 0.5rem 0.4rem;
+  outline: none;
 }
-#search-icon{
+.fas.fa-search {
   color: #cbcbcb;
 }
 </style>

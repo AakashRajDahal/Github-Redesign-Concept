@@ -30,8 +30,6 @@
         </span>
       </div>
       <!-- <div class="status">New Repository</div> -->
-    <button><i class="fas fa-star"></i> Star</button>
-
     </aside>
   </div>
 </template>
