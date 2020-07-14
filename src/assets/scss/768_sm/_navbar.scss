@@ -3,6 +3,8 @@ nav {
   border-radius: 3px;
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  bottom: 0;
   .nav1,
   .nav2 {
     display: none;

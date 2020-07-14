@@ -20,14 +20,9 @@ body {
 @import "md/explore";
 @import "md/navbar";
 
-@media only  screen and (max-width:768x){
-@import "768_sm/repositories";
-@import "768_sm/explore";
-@import "768_sm/navbar";
-@import "768_sm/home";
-
+@media only screen and (max-width: 768px) {
+  @import "768_sm/home";
+  @import "768_sm/repositories";
+  @import "768_sm/explore";
+  @import "768_sm/navbar";
 }
-
-
-
-

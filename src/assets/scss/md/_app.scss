@@ -1,33 +1,33 @@
 .app {
+  display: flex;
+  ul {
+    list-style: none;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
     display: flex;
-    ul {
-        list-style: none;
-    }
-    body {
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: "Avenir", Helvetica, Arial, sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
- 
-    .button:hover {
-        background: #aa445b;
-    }
+    align-items: center;
+    justify-content: center;
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .button:hover {
+    background: #aa445b;
+  }
 }
 #button1 {
-    border-radius: 2px;
-    background: #d55672;
-    border: none;
-    padding: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-    color: #fff;
-    outline: none;
+  border-radius: 2px;
+  background: #d55672;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
 }

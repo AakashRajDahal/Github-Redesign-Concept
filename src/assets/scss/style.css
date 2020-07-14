@@ -59,8 +59,8 @@ body {
   -ms-grid-columns: 1fr 2fr 1fr;
       grid-template-columns: 1fr 2fr 1fr;
   grid-gap: 1rem;
+  margin: 1rem;
   margin-top: 3rem;
-  max-width: 1360px;
 }
 
 .repo {
@@ -435,7 +435,11 @@ nav .nav3 .fas.fa-bell {
   line-height: 30px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768x) {
+  .home {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
   .repo {
     display: none;
   }
@@ -460,10 +464,6 @@ nav .nav3 .fas.fa-bell {
   nav .nav3 .fas.fa-bell {
     font-size: 20px;
     line-height: 30px;
-  }
-  .home {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
   }
 }
 /*# sourceMappingURL=style.css.map */
