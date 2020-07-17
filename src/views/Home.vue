@@ -3,6 +3,7 @@
     <repositories />
     <feed />
     <explore />
+    <Footer1 />
   </div>
 </template>
 
@@ -18,6 +19,7 @@ export default {
     Repositories,
     Feed,
     Explore,
+
   },
 };
 </script>
