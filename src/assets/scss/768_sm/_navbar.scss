@@ -1,17 +1,16 @@
 nav {
-  border-bottom: 1px solid $DarkGray;
-  border-radius: 3px;
-  display: flex;
-  justify-content: space-between;
+  border-bottom: none;
   .nav1,
-  .nav2 {
+  .nav2,
+  .nav3 {
     display: none;
   }
-  .nav3 {
-    .fas.fa-store,
-    .fas.fa-bell {
-      font-size: 20px;
-      line-height: 30px;
+  .nav4 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .nav-item {
+      display: inline;
     }
   }
 }

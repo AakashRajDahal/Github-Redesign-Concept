@@ -5,7 +5,8 @@ nav {
   justify-content: space-between;
   .nav1,
   .nav2,
-  .nav3 {
+  .nav3 ,
+  .nav4{
     list-style: none;
     display: flex;
     justify-content: center;
@@ -42,5 +43,10 @@ nav {
       font-size: 20px;
       line-height: 30px;
     }
+  }
+  .nav4{
+    display: flex;
+    justify-content: space-between;
+    display: none;
   }
 }
