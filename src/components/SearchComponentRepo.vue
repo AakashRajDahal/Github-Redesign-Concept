@@ -169,5 +169,6 @@ export default {
   border: none;
   width: auto;
   background: #f5f5f5;
+  outline:none;
 }
 </style>
