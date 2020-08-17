@@ -52,10 +52,37 @@
       </ul>
       <ul class="nav4">
         <li class="nav-item">
-          <a href="
-          ">
-            <i class="fas fa-bars"></i>
-          </a>
+          <div id="sidemenu">
+            <button
+              class="sidemenu__btn"
+              v-on:click="navOpen=!navOpen"
+              v-bind:class="{active:navOpen}"
+            >
+              <span class="top"></span>
+              <span class="mid"></span>
+              <span class="bottom"></span>
+            </button>
+            <transition name="translateX">
+              <nav v-show="navOpen">
+                <div class="sidemenu__wrapper">
+                  <ul class="sidemenu__list">
+                    <li class="sidemenu__item">
+                      <a href>Pull request</a>
+                    </li>
+                    <li class="sidemenu__item">
+                      <a href>Issues</a>
+                    </li>
+                    <li class="sidemenu__item">
+                      <a href>Explore</a>
+                    </li>
+                    <li class="sidemenu__item">
+                      <a href>New repo</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </transition>
+          </div>
         </li>
         <li>
           <img src="@/assets/feather github.svg" alt="person working " /> Your Feed
@@ -79,6 +106,7 @@ export default {
   data() {
     return {
       menuOpen: false,
+      navOpen: false,
     };
   },
   methods: {

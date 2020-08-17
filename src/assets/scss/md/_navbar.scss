@@ -5,14 +5,14 @@ nav {
   justify-content: space-between;
   .nav1,
   .nav2,
-  .nav3 ,
-  .nav4{
+  .nav3,
+  .nav4 {
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
     li {
-      a{
+      a {
         padding-right: 1.5rem;
         color: $primaryDark;
         font-weight: 500;
@@ -28,7 +28,6 @@ nav {
           font-size: 6px;
           color: transparent;
         }
-
       }
     }
     .list1 {
@@ -44,9 +43,118 @@ nav {
       line-height: 30px;
     }
   }
-  .nav4{
+  .nav4 {
     display: flex;
     justify-content: space-between;
     display: none;
+    #sidemenu {
+      nav {
+        width: 100%;
+        // height: calc(100% - #{$headerHeight} - #{$footerHeight});
+        background: grey;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        min-height: 100vh;
+        z-index: 99;
+        // box-shadow: 2px 0 3px$grey-6;
+        // overflow-y: scroll;
+      }
+
+      .sidemenu {
+        &__btn {
+          display: block;
+          width: 50px;
+          height: 50px;
+          background: none;
+          border: none;
+          position: relative;
+          z-index: 100;
+          appearance: none;
+          cursor: pointer;
+          outline: none;
+
+          span {
+            display: block;
+            width: 20px;
+            height: 2px;
+            margin: auto;
+            background: black;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transition: all 0.4s ease;
+
+            &.top {
+              transform: translateY(-8px);
+            }
+
+            &.bottom {
+              transform: translateY(8px);
+            }
+          }
+          &.active {
+            .top {
+              transform: rotate(-45deg);
+            }
+            .mid {
+              transform: translateX(-20px) rotate(360deg);
+              opacity: 0;
+            }
+            .bottom {
+              transform: rotate(45deg);
+            }
+          }
+        }
+
+        &__wrapper {
+          padding: 50px 0 0 50px;
+          width: 100%;
+        }
+
+        &__list {
+          padding-top: 50px;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+
+        &__item {
+          a {
+            text-decoration: none;
+            line-height: 1.6em;
+            font-size: 1.6em;
+            padding: 0.5em;
+            display: block;
+            color: white;
+            transition: 0.4s ease;
+
+            &:hover {
+              background: lightgrey;
+              color: dimgrey;
+            }
+          }
+        }
+      }
+    }
+
+    .translateX-enter {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+
+    .translateX-enter-active,
+    .translateX-leave-active {
+      transform-origin: top left 0;
+      transition: 0.2s ease;
+    }
+
+    .translateX-leave-to {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
   }
 }
