@@ -29,3 +29,7 @@ body {
   @import "768_sm/navbar";
   @import "768_sm/bottom-main";
 }
+
+@media only screen and (max-width: 425px){
+  @import "425_col/home";
+}
